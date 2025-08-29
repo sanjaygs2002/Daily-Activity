@@ -6,7 +6,7 @@ function DataFetch() {
     const [state,setState]= useState([]);
 // Get Request
     useEffect(()=>{
-        setTimeout(()=>{
+       
             axios.get("https://jsonplaceholder.typicode.com/users")
             .then((res)=>{
                 const ans= res.data;
@@ -14,7 +14,7 @@ function DataFetch() {
             }).catch((err)=>{
                 console.log(err);    
             })
-        },2000)
+        
     },[])
 
 // Post Request 
