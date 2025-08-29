@@ -1,0 +1,14 @@
+Explore on the Browser router => basename .
+Hash router => basename along with  exact keyword inside the Route Link.
+Everything after # is managed by React Router and  server only see the part before #.
+Good for static file hoisting.
+
+Memory Router:
+It keeps navigation history in memory and not in the browser address bar.
+It is useful for when testing(unit testing) the react components.
+
+Axios:
+It is promise based http client used to send HTTP request (Get,Post,Patch,Put,delete)
+It has automatic json convertion and better error handling then fetch
+If the server does not respond within give time , axios was abort the request and give error.
+
