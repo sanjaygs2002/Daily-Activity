@@ -1,0 +1,24 @@
+Error Boundaries
+Fragments
+Portals
+Profiler
+
+Error Boundaries:
+It is one of the react component for display while react is rendering fallback UI when whole application is crashed.
+It is used in production environment for not showing blank page.
+Alternate method is try , catch but it is for synchornized 
+
+Fragments:
+It is grouped the multiple children into without adding dom elements.
+We can use when returning multiple elements from the  component without wrapping in <div>.
+When use <div> it creates unnecessary DOM nodes.
+
+Portals:
+With portal render the react components child element into different part the dom outside of the parent component.
+react renders a components children inside its parent dom tree.
+
+
+Profiler:
+It is used to measure tye react component performance during rendering.
+Measures render duration of each component.
+Detects unnecessary re-renders (missing useMemo / useCallback).

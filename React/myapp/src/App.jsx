@@ -4,6 +4,8 @@ import FetchingData from "./Components/FetchingData";
 import ControllerForm from "./Components/ControlledForm";
 import UnControlledForm from "./Components/UnControlledForm";
 import DataFetch from "./Axios/DataFetch";
+import ClickButton from "./Portals/ClickButton";
+import Task2 from "./Profiler/Task2";
 
 function App() {
   return (
@@ -11,9 +13,12 @@ function App() {
       <BrowserRouter basename="Root">
            <Routes> 
             <Route path="/" element={<FetchingData/>}/>
+            
             <Route path="control" element={<ControllerForm/>}/>
             <Route path = "uncontrol" element={<UnControlledForm/>}/>
             <Route path = "data" element={<DataFetch/>}/>
+            <Route path="click" element={<ClickButton/>}/>
+            <Route path="task2" element={<Task2/>}/>
            </Routes>
       </BrowserRouter>
 
