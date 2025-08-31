@@ -6,3 +6,33 @@ Production Optimize Webpack
 3.Webpack production webpack.config.js
 4.Loaders
 5.Profiling Webpack build
+
+Webpack is a module bundler. It takes html,css and images files into single Optimize file for production time.
+Add Production plugins in webpack.config.js file for respective purpose
+we have plugins for html, css like(HtmlWebpackPlugins=> Generates index.html and injects bundled files automatically.)
+MiniCssExtractPlugin=>Extracts CSS into separate files.
+
+HTML & CSS minifying:
+Remove spaces and comments and unwanted/unused codes in the files.
+
+Loaders:
+Loaders transform files into valid JS modules.
+eg: babel-loader => Transpile ES6+/JSX to plain JS.
+
+Tree shaking :
+It is form of dead-code elimination that optimizes the size of your application final bundle by removing unused code.
+
+Profiling webpack build
+To add this in webpack file to check the performance in browser using tree shaking .
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+plugins: [
+  new BundleAnalyzerPlugin()
+]
+
+add run commands:
+npm install --save-dev webpack-bundle-analyzer
+
+npx webpack --config webpack.config.js
+
+
+
