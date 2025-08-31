@@ -1,6 +1,6 @@
 // with and without useMemo
 
-import React, { useState,useMemo } from 'react'
+import React, { useState,useMemo, Profiler } from 'react'
 
 
 

@@ -6,6 +6,7 @@ import UnControlledForm from "./Components/UnControlledForm";
 import DataFetch from "./Axios/DataFetch";
 import ClickButton from "./Portals/ClickButton";
 import Task2 from "./Profiler/Task2";
+import Form from "./Form";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path = "data" element={<DataFetch/>}/>
             <Route path="click" element={<ClickButton/>}/>
             <Route path="task2" element={<Task2/>}/>
+            <Route path="form" element={<Form/>}/>
            </Routes>
       </BrowserRouter>
 
