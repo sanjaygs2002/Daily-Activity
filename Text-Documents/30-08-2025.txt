@@ -19,6 +19,6 @@ react renders a components children inside its parent dom tree.
 
 
 Profiler:
-It is used to measure tye react component performance during rendering.
+It is used to measure type react component performance during rendering.
 Measures render duration of each component.
 Detects unnecessary re-renders (missing useMemo / useCallback).

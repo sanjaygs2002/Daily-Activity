@@ -1,0 +1,45 @@
+Material UI How to use in react js:
+to install command for materials => npm install @mui/material @emotion/react @emotion/styled.
+Button variant
+TextField
+Tables
+Container
+
+Server Components:
+It is new feature in react 19.
+Traditionally react app is client side rendering 
+It can be directly render UI content on the server.
+It allow certain component can be rendered on server side insteed of client/browser.
+benefit is reduce bundle size, can directly fetch data and increase SEO's performance.
+hide sensitive logic database quiries , code never reaches client.
+Plain React does not support but we use react framework to use this. 
+
+
+Rule:
+UI + Interactivity = Client components
+UI + DataFetching  = Server components
+
+React Micro frontend concepts:
+Micro frontend is used for multiple teams can be work individual modules of the same project without impacting the other modules
+Deployed independently.
+usefull for large scale project
+We should use any technology like react or vue.js or angular for single project.
+Code reusablity.
+ 
+To Install : npx create-mf-app , after choose respective requirements.
+
+
+
+pnpm
+Pnpm is performant node package manager used to install package 3 times faster than npm or yarn.
+And useful for monorepos.
+Disk space efficency => insteed of duplicating package across project, pnpm use global store and save 90% saves disk space.
+
+module federations
+It is a webpack 5 that allow multiple independently deployed and build application to share code at runtime.
+It allows dynamic imports of remote modules.
+
+rspack
+Rspack is high performance js bundler and much faster than webpack
+build in support for module federation.
+to install npm i @rspack/core.
