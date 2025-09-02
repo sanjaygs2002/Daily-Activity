@@ -1,0 +1,24 @@
+Profiler:
+
+It is build in react tool to track performance of the react component render and how long it take to be render.
+How to use this means 
+
+<Profiler id="myapp" onRender={callbackfunction}>
+// Components
+</Profiler>
+
+And in that callback function we have parameter to track the rendering process they are:
+id => it is props for profiler
+phase => it is mounting or updating phase during render.
+actualDuration => It is time spend in rendering
+baseDuration => Time would take without memoization.
+startTime => When React started rendering this update.
+commitTime => When React finished rendering and committed updates to the DOM.
+interactions => used in tracking api's.
+
+ErrorBoundary:
+It is catch js error any component prevent the whole app crashed insteed of showing fallback UI .
+Catching the error in third party libraries.
+
+Micro frontend in react:
+creating multiple remote app 

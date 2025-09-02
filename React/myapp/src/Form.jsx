@@ -22,10 +22,14 @@
 // export default Form
 
 import React, { useState } from 'react'
+import Button from '@mui/material/Button'
+import TextField from '@mui/material/TextField';
 
 function Form() {
 
     const [state,setState]= useState("");
+    
+  
 
     const handleChange=()=>{
         alert(`Hi my is ${state}`);
@@ -34,11 +38,29 @@ function Form() {
     <div>
         <p>Name is : {state}</p>
         <form onSubmit={handleChange}>
-        <input type="text"
+
+        {/* <input type="text"
         placeholder='Enter the name' 
+        onChange={(e)=>setState(e.target.value)}/> */}
+
+        <TextField variant='standard' placeholder='Enter the name'
+        onChange={(e)=>setState(e.target.value)}/>
+
+        
+        <TextField variant='outlined' placeholder='Enter the name'
+        onChange={(e)=>setState(e.target.value)}/>
+
+        
+        <TextField variant='filled' placeholder='Enter the name'
         onChange={(e)=>setState(e.target.value)}/>
         <button type='submit'>Submit</button>
+         
+        <Button variant="text">Text Submit</Button><br></br>
+
+        <Button variant="contained">Contained Submit</Button><br></br>
+        <Button variant='outlined'>OutLined Button</Button><br></br>
         </form>
+       
     </div>
   )
 }
