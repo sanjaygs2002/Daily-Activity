@@ -1,0 +1,26 @@
+Custom Hook:
+
+It is used to create custom logic and share that logic through out when components needs.
+To avoid wrapper hell because when use hoc we have wrap multiple components to share data.
+And no props drilling.
+Custom hooks have atleast one any react hooks inside.
+
+
+Redux and Flux
+Redux:
+
+It is state management library for react and data store at central place when any component to access that data using useSelector and to update the state via useDispatch.
+Data flow is [Action => Reducer => Store => View].
+
+Using ToolKit:
+createSlice 
+It is piece of global state and logic to update it.
+reducers, action creators writting separately insteed createSlice wrap all in one file.
+Insteed of createStore in old redux we use ConfigureStore to hold state.
+Combines reducers automatically
+Good default middlewares (redux-thunk, devtools)
+
+Flux:
+It is architectural Pattern and unidirectional data flow used to complex state managed for large scale application.
+Data Flow: [Action => Dispatcher => store => View].
+

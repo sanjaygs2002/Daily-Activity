@@ -13,6 +13,9 @@ import ProductList from "./Server-Component/ProductList";
 import Counting from "./Profiler/Counting";
 import { Profiler } from "react";
 import RenderPerformance from "./Profiler/RenderPerformance";
+import FetchingApi from "./Custom-Hook/FetchingApi";
+import SampleForm from "./Custom-Hook/SampleForm";
+import Counter from "./Redux/Counter";
 
 function App() {
  // throw new Error("Hi how are u");  => used for Error boundary concepts.
@@ -33,6 +36,9 @@ function App() {
             <Route path="product" element={<ProductCard/>}/>
             <Route path="list-product" element={<ProductList/>}/>
             <Route path="count" element={<RenderPerformance/>}/>
+            <Route path="fetch" element={<FetchingApi/>}/>
+            <Route path="sampleForm" element={<SampleForm/>}/>
+            <Route path="counter" element={<Counter/>}/>
             
            </Routes>
       </BrowserRouter>

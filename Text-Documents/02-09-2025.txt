@@ -21,4 +21,4 @@ It is catch js error any component prevent the whole app crashed insteed of show
 Catching the error in third party libraries.
 
 Micro frontend in react:
-creating multiple remote app 
+creating multiple remote app
