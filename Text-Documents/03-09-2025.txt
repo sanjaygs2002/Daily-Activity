@@ -15,9 +15,9 @@ Data flow is [Action => Reducer => Store => View].
 Using ToolKit:
 createSlice 
 It is piece of global state and logic to update it.
-reducers, action creators writting separately insteed createSlice wrap all in one file.
+reducers, action creators writing separately instead createSlice wrap all in one file.
 Insteed of createStore in old redux we use ConfigureStore to hold state.
-Combines reducers automatically
+Combines reducers automatically.
 Good default middlewares (redux-thunk, devtools)
 
 Flux:

@@ -16,9 +16,14 @@ import RenderPerformance from "./Profiler/RenderPerformance";
 import FetchingApi from "./Custom-Hook/FetchingApi";
 import SampleForm from "./Custom-Hook/SampleForm";
 import Counter from "./Redux/Counter";
+import EmailForm from "./UseIdHooks/EmailForm";
+import DefferList from "./UseDefferedValue/DefferList";
+import UseForm from "./ReactHookForm/UseForm";
+import User from "./Redux-CreateAsyncThunk/user";
+
 
 function App() {
- // throw new Error("Hi how are u");  => used for Error boundary concepts.
+ // throw new Error("Error happen but it not crashed");  => used for Error boundary concepts.
   
   return (
     <>
@@ -39,7 +44,12 @@ function App() {
             <Route path="fetch" element={<FetchingApi/>}/>
             <Route path="sampleForm" element={<SampleForm/>}/>
             <Route path="counter" element={<Counter/>}/>
+            <Route path="emailForm" element ={<EmailForm/>}/>
+            <Route path="differList" element={<DefferList/>}/>
+            <Route path="useform" element={<UseForm/>}/>
+            <Route path="user" element={<User/>}/>
             
+
            </Routes>
       </BrowserRouter>
 

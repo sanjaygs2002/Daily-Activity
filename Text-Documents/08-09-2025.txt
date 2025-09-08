@@ -1,0 +1,37 @@
+useId Hooks:
+
+It is react hooks and generate the unique id string that matches server and client render. 
+Better for accessibility attributes like htmlFor.
+Declare at top of the component.
+useId should not be used to generate keys in a list.
+
+useDefferedValue:
+
+It is hook used for defer updating part of UI.
+It accept two parameters one is value and another is initialValue is optional.
+useDefferedValue is integrated with suspense , so that updated caused by new value suspense of the ui, the user will not see the fallback,instead of they see old deffered value.
+
+React Hook Form:
+
+It is third party library used for react forms for advanced validation and performance sensitive apps.
+Hook name is useForm.
+It reduces re-renders.
+To install npm i react-hook-form
+Better Error handling.
+
+React redux thunk:
+
+It is middlewares to write action creator and return a function Instead of plain object.
+Run async code
+disptach multiple actions(loading,success,error)
+with thunk its a async
+without thunk its a sync flow.
+To install npm i redux-thunk
+
+CreateAsyncThunk:
+
+It is modern way to handle async code in RTK.
+It has take Pending, fulfilled , rejected as three arguments.
+Built in error handling using [rejectWithValue].
+
+
