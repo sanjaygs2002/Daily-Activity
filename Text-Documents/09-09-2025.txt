@@ -1,0 +1,38 @@
+EsLint:
+It is code analysis tool for js and ts to find and fix problem in their code.
+Improve code quality and coding standard.
+Error detection
+Code style
+Auto fix
+
+For React js we use before this command to parser jsx and ts syntax  npm install --save-dev @babel/eslint-parser
+And also configure eslint.config.js file in that, import babelParser from "@babel/eslint-parser"; 
+Then use inside the code directly, parser: babelParser
+ rules: {
+      "no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"],
+    },
+
+To install using command   npm i eslint-plugin-react
+
+Then check using this command npx eslint src/Form.jsx (or any file name provide) --fix.
+
+In eslint file use ecmaVersion:latest
+
+
+Prettier:
+It is used to handles spacing, semicolons, quotes, wrapping.
+Format Once : npx prettier --write src/Form.jsx
+
+Check only:
+
+npx prettier --check src/Form.jsx
+ 
+Output:
+Checking formatting...
+All matched files use Prettier code style!
+
+
+
+

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState} from "react";
 
 function UseForm() {
 
@@ -8,7 +8,7 @@ function UseForm() {
        setValues({
         ...values,
         [e.target.name]:e.target.value
-       })
+       });
     }
 
     function resetForm(){
@@ -17,4 +17,4 @@ function UseForm() {
   return { values,handleChange,resetForm};
 }
 
-export default UseForm
+export default UseForm;
